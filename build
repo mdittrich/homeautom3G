@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Building the Home Automation 3G Firmware..."
+
+g++ -O2 -Wall -lcurl homeautom_3g.cpp gpio/gpio.cpp serialib/serialib.cpp netlib/netlib.cpp -o homeautom_3g
